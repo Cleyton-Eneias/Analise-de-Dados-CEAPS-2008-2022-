@@ -1,0 +1,28 @@
+Primeiramente, utilizei a biblioteca Pandas para realizar agrupamentos e cálculos sobre o dataset. 
+A partir disso, consegui gerar algumas análises que mostram diferentes perspectivas dos gastos declarados pelos senadores.
+Em seguida, utilizei a biblioteca Plotly para criar gráficos interativos e a ferramenta Streamlit para organizar esses gráficos em um dashboard interativo.
+
+*Análises Realizadas*
+Top 10 Senadores com Maiores Gastos
+Realizei um agrupamento dos dados por senador e somei os valores das despesas declaradas. Com isso, consegui identificar os 10 senadores com maiores gastos registrados no dataset.
+Para apresentar essa informação, utilizei um gráfico de barras, pois ele permite comparar facilmente os valores entre diferentes senadores.
+
+*Distribuição dos Gastos por Tipo de Despesa*
+Também analisei como os gastos estão distribuídos entre os diferentes tipos de despesas declaradas.
+Para essa análise, agrupei os dados por tipo de despesa e somei os valores correspondentes. 
+Para representar visualmente essa distribuição, utilizei um gráfico de pizza, que permite visualizar a proporção de cada categoria em relação ao total de gastos.
+
+*Evolução dos Gastos ao Longo dos Anos*
+Outra análise realizada foi observar como os gastos evoluíram ao longo dos anos.
+Para isso, agrupei os dados por ano e somei os valores das despesas. 
+O resultado foi representado em um gráfico de linha, que facilita a visualização de tendências ao longo do tempo.
+
+*Dashboard Interativo*
+Por fim, organizei todas essas visualizações em um dashboard utilizando Streamlit. O dashboard apresenta:
+métricas gerais de gastos
+gráfico dos senadores que mais gastaram
+distribuição dos gastos por tipo de despesa
+evolução dos gastos ao longo dos anos
+
+Isso permite uma visualização mais clara e interativa das informações.
+

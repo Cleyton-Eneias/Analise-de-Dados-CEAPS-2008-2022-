@@ -1,0 +1,9 @@
+RELATORIO - 3
+
+Agora meu objetivo foi prever os gastos dos senadores nos próximos três meses, utilizando técnicas de Forecasting.
+O foco foi transformar dados históricos em informações preditivas, permitindo antecipar tendências futuras.
+
+Utilizei o "dataset-ceaps-Forecasting.csv" e converti a coluna de data para datetime do pandas.
+Usei a biblioteca do Prophet para criar o modelo de previsão e Plotly para crialçao do gráfico interativo.
+Gerei um dataframe com as próximas datas (90 dias) para prever os gastos futuros.
+Apliquei o modelo para estimar os valores de y nos próximos 3 meses.

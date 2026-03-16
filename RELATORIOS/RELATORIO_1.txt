@@ -1,0 +1,58 @@
+RELATÓRIO — DIA 1
+1. Coleta dos Dados
+Inicialmente, foi realizado o download do dataset disponível no portal de dados abertos do Senado Federal:
+https://www12.senado.leg.br/transparencia/dados-abertos-transparencia/dados-abertos-ceaps
+Foram baixados todos os arquivos disponíveis no formato CSV referentes às despesas da CEAPS (Cota para Exercício da Atividade Parlamentar dos Senadores), correspondentes aos seguintes anos:
+CEAPS – 2022
+CEAPS – 2021
+CEAPS – 2020
+CEAPS – 2019
+CEAPS – 2018
+CEAPS – 2017
+CEAPS – 2016
+CEAPS – 2015
+CEAPS – 2014
+CEAPS – 2013
+CEAPS – 2012
+CEAPS – 2011
+CEAPS – 2010
+CEAPS – 2009
+CEAPS – 2008
+
+2. Importação da Biblioteca
+Foi utilizada a biblioteca Pandas, amplamente utilizada em Python para manipulação e análise de dados tabulares.
+import pandas as pd
+
+3. Carregamento dos Arquivos
+Todos os arquivos CSV baixados foram carregados para o ambiente de análise utilizando a função read_csv() da biblioteca Pandas.
+
+4. União dos Datasets
+Após o carregamento, todos os datasets foram unificados em um único DataFrame utilizando a função:
+pd.concat()
+Essa etapa permitiu consolidar os dados de todos os anos em uma única estrutura para facilitar a análise.
+
+5. Verificação de Dados Nulos
+Foi realizada uma verificação para identificar a presença de valores nulos no conjunto de dados.
+
+6. Remoção de Dados Duplicados
+Registros duplicados foram identificados e removidos para garantir a integridade e consistência do dataset.
+
+7. Ajuste dos Índices
+Durante a análise foi observado que existiam índices repetidos devido à junção dos datasets.
+Por esse motivo, os índices foram resetados para garantir uma sequência correta.
+
+8. Padronização da Coluna de Data
+A coluna DATA foi convertida para o formato de data apropriado para permitir operações temporais e análises cronológicas.
+
+9. Conversão de Valores Monetários
+Os valores monetários foram tratados para garantir o formato numérico correto.
+Foram removidos separadores de milhar e ajustado o separador decimal para o padrão utilizado pelo Python.
+
+10. Padronização da Coluna CNPJ/CPF
+A coluna CNPJ_CPF foi padronizada removendo caracteres especiais, mantendo apenas os dígitos numéricos.
+
+11. Ajuste do Índice Inicial
+O índice do DataFrame foi ajustado para iniciar a contagem a partir de 1.
+
+12. Exportação do Dataset
+Após todas as etapas de tratamento e padronização dos dados, o dataset final foi salvo novamente no formato CSV para utilização em análises futuras.
