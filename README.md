@@ -7,7 +7,6 @@
 <img src="https://img.shields.io/badge/Plotly-Data%20Visualization-purple">
 <img src="https://img.shields.io/badge/Streamlit-Dashboard-red">
 <img src="https://img.shields.io/badge/Prophet-Forecasting-green">
-<img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow">
 </p>
 
 <hr>
